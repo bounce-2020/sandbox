@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="page-width page-width--narrow">
+  <h1 class="main-page-title page-title h0">
+    {{ page.title | escape }}
+  </h1>
+  <div class="rte">
+    {{ page.content }}
+  </div>
+  
+  <hr>
+  
+  <h1>Summary of common HTML tags:</h1>
+  <p>The summary of HTML tags below are ones that you will use most often. To view every type of HTML tag, go to this link.</p>
+  
+  <hr>
+  
+  <h1>Heading One</h1>
+  <h2>Heading Two</h2>
+  <h3>Heading Three</h3>
+  <h4>Heading Four</h4>
+  <h5>Heading Five</h5>
+  <h6>Heading Six</h6>
+  
+  <hr>
+  
+  <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  
+  <hr>
+  
+  <a href="/">This is an anchor link</a>
+  
+  <hr>
+  
+  <ul>
+    <li>List item one</li>
+	<li>List item two</li>
+    <li>List item three</li>
+    <li>List item four</li>
+  </ul>
+  
+  <hr>
+  
+  <table>
+    <thead>
+      <th scope="col">Table Head Column One</th>
+      <th scope="col">Table Head Column Two</th>
+      <th scope="col">Table Head Column Three</th>
+      <th scope="col">Table Head Column Four</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Row One Column One</td>
+        <td>Row One Column Two</td>
+        <td>Row One Column Three</td>
+        <td>Row One Column Four</td>
+      </tr>
+	  <tr>
+        <td>Row Two Column One</td>
+        <td>Row Two Column Two</td>
+        <td>Row Two Column Three</td>
+        <td>Row Two Column Four</td>
+      </tr>
+      <tr>
+        <td>Row Three Column One</td>
+        <td>Row Three Column Two</td>
+        <td>Row Three Column Three</td>
+        <td>Row Three Column Four</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <hr>
+  
+  <button type="button">Click Me!</button>
+  
+  <hr>
+  
+  Form – Input, Select, Radio etc.
+  
+  <hr>
+  
+  <img>
+  
+  <hr>
+  
+  Div and Span
+  
+  <hr>
+  
+  <h1>HTML Attributes</h1>
+  <p>The next thing to learn is HTML attributes, such as class="", id="", href="", type="", placeholder="", src="" and so on.</p>
+  
+  <hr>
+  
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "spaced-section"
+}
+{% endschema %}

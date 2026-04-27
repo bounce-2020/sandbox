@@ -1,0 +1,55 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "f3d1608c-e7a9-4a47-8510-88540139a744": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk is cheap. Show me the code.",
+            "heading_size": "medium"
+          }
+        },
+        "ab2d750a-e691-4fde-a64b-8ff52d038389": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Tutorial Links",
+            "button_link_1": "shopify://pages/tutorial-links",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "f3d1608c-e7a9-4a47-8510-88540139a744",
+        "ab2d750a-e691-4fde-a64b-8ff52d038389"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    }
+  },
+  "order": [
+    "image_banner"
+  ]
+}

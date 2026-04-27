@@ -1,0 +1,177 @@
+<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="page-width page-width--narrow">
+  <h1 class="main-page-title page-title h0">
+    {{ page.title | escape }}
+  </h1>
+  <div class="rte">
+    {{ page.content }}
+  </div>
+  
+  <hr>
+  
+  <h1>Definition</h1>
+  <p>The Flexbox Layout (Flexible Box) module aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).</p>
+  <p>The main idea behind the flex layout is to give the container the ability to alter its items’ width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.</p>
+  
+  <hr>
+  
+  <h1>The Basic Concept</h1>
+  <p>A Flexbox is made up of two elements:</p>
+  <ul>
+    <li>Parent container (known as a flex container).</li>
+    <li>Children elements (known as flex items).</li>
+  </ul>
+  <p>A flexbox parent container can have as many flex item children elements as you wish. Below is an example of a simple flexbox:</p>
+  
+  <div class="flex-container">
+    <div class="flex-item">Flex Item</div>
+    <div class="flex-item">Flex Item</div>
+    <div class="flex-item">Flex Item</div>
+    <div class="flex-item">Flex Item</div>
+  </div>
+ 
+  <style>
+    .flex-container {
+      display: flex;
+      background-color: blue;
+    }
+    
+    .flex-item {
+      background-color: green;
+      margin: 10px;
+      padding: 30px 15px;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+  </style>
+  
+  <hr>
+  
+  <h1>Flexbox Properties – For parent flex container:</h1>
+  <p>The following properties can be applied to a parent flexbox element (flex-container) in the CSS.</p>
+    
+  <ul>
+    <li>display</li>
+    <li>flex-direction</li>
+    <li>flex-wrap</li>
+    <li>flex-flow</li>
+    <li>justify-content</li>
+    <li>align-items</li>
+    <li>align-content</li>
+    <li>gap, row-gap, column-gap</li>
+  </ul>
+  
+  <br><br>
+  
+  <h2>Definitions:</h2>
+  <p>Below are the definition and purpose of each property that can be applied to a parent element flex container.</p>
+  
+  <hr>
+  
+  <h3>display</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>flex-direction</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>flex-wrap</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>flex-flow</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>justify-content</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>align-items</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>align-content</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>gap, row-gap, column-gap</h3>
+  <p>definition goes here.</p>
+  
+  
+  <hr>
+  
+  <h1>Flexbox Properties – For child element flex items:</h1>
+  <p>The following properties can be applied to a child flexbox element (flex-item) in the CSS.</p>
+  
+  <ul>
+    <li>order</li>
+    <li>flex-grow</li>
+    <li>flex-shrink</li>
+    <li>flex-basis</li>
+    <li>flex</li>
+    <li>align-self</li>
+  </ul>
+  
+  <br><br>
+  
+  <h2>Definitions:</h2>
+  <p>Below are the definition and purpose of each property that can be applied to a child element flex item.</p>
+  
+  <hr>
+  
+  <h3>order</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>flex-grow</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>flex-shrink</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>flex-basis</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>flex</h3>
+  <p>definition goes here.</p>
+  
+  <hr>
+  
+  <h3>align-self</h3>
+  <p>definition goes here.</p>
+    
+  <hr>
+  
+  <h2>Use Cases</h2>
+  <p>You can use CSS flexbox to position and layout any group of elements, whether it be a group of images, headings/paragraph text or whole blocks of content within div's. Below are some examples of where we might use it...</p>
+  
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.main-page.name",
+  "tag": "section",
+  "class": "spaced-section"
+}
+{% endschema %}
